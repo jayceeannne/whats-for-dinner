@@ -34,9 +34,6 @@ var youShouldMake = document.querySelector(".you-should-make");
 var returnedFood = document.querySelector(".returned-food");
 
 //eventListeners:
-// sideRadioButton.addEventListener('click', randomizedDish);
-// mainRadioButton.addEventListener('click', randomizedDish);
-// dessertRadioButton.addEventListener('click', randomizedDish);
 letscookButton.addEventListener("click", showTheDish);
 clearButton.addEventListener("click", clear);
 
@@ -65,8 +62,7 @@ function randomizedDish() {
 function showTheDish() {
   cookingPotImg.classList.add("hidden");
   youShouldMake.classList.remove("hidden");
-  if (
-    entireMealButton.checked ||
+  if (entireMealButton.checked ||
     sideButton.checked ||
     mainButton.checked ||
     dessertButton.checked
@@ -76,12 +72,12 @@ function showTheDish() {
   } else {
     returnedFood.classList.add("hidden");
   }
-  console.log(returnedFood)
 }
 
 function clear() {
   returnedFood.innerHTML = "";
+  clearButton.classList.remove("hidden");
   returnedFood.classList.add("hidden");
   cookingPotImg.classList.remove("hidden");
-  clearButton.classList.remove("hidden");
+//   clearButton.classList.remove("hidden");
 }
