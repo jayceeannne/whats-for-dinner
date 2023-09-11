@@ -8,9 +8,9 @@ red - #ee5253
 
 */
 
-* {
+/* * {
     border: 3px solid yellowgreen;
-}
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -42,7 +42,7 @@ h1 {
 
 .main-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 78px;
 }
@@ -52,6 +52,11 @@ h1 {
     width: 400px;
     height: 300px;
     padding:35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start ;
+
 }
 
 .left-header {
@@ -67,10 +72,12 @@ h1 {
 
 .radio-buttons-container{
     display: flex;
+    
 }
 
 #lets-cook-button {
     background-color: #0fb9b1;
+    border-color:  #0fb9b1;
     border-radius: 10px;
     height: 45px;
     width: 245px;
@@ -88,8 +95,36 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+.hidden {
+    display: none 
+}
+
 .cook-pot {
     width: 150px;
     height: 150px;
     padding: 80px;
+}
+
+.you-should-make {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.returned-food {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.clear-button {
+    display: flex;
+    background-color: #95a5a6;
+    color: white;
+    height: 50px;
+    width: 123px;
+    border-radius: 8px;
+    font-size: medium;
+    margin-top: 45px;
+    margin-left: 275px;
+    border-radius: 5px;
 }
